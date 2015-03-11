@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8999168B-CEE4-4D9F-AC26-8CE51C56B83B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RibbonInkCanvas</RootNamespace>
+    <AssemblyName>RibbonInkCanvas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Core.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Docking.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Grid.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Grid.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Layout.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.NavBar.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Ribbon.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>..\..\..\..\..\Desktop\WPFRibbonCTP\WPFRibbonCTP\RibbonBinaries\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DocWindow.xaml.cs">
+      <DependentUpon>DocWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExplorerWindow.xaml.cs">
+      <DependentUpon>ExplorerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListWindow.xaml.cs">
+      <DependentUpon>ListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mytreeviewitem.cs" />
+    <Compile Include="PropertyWindow.xaml.cs">
+      <DependentUpon>PropertyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecentFile.cs" />
+    <Compile Include="RecentFiles.cs" />
+    <Compile Include="UC\Action\Action_modify.xaml.cs">
+      <DependentUpon>Action_modify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sound\Sound.xaml.cs">
+      <DependentUpon>Sound.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sprite\Make_Sprite.xaml.cs">
+      <DependentUpon>Make_Sprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sprite\Make_Sprite2.xaml.cs">
+      <DependentUpon>Make_Sprite2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sprite\Make_Sprite3.xaml.cs">
+      <DependentUpon>Make_Sprite3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sprite\Modify_Sprite1.xaml.cs">
+      <DependentUpon>Modify_Sprite1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Sprite\Modify_Sprite2.xaml.cs">
+      <DependentUpon>Modify_Sprite2.xaml</DependentUpon>
+    </Compile>
+    <Page Include="DocWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ExplorerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PropertyWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UC\Action\Action_modify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sound\Sound.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sprite\Make_Sprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sprite\Make_Sprite2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sprite\Make_Sprite3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sprite\Modify_Sprite1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Sprite\Modify_Sprite2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\app.png" />
+    <Resource Include="Images\applications.png" />
+    <Resource Include="Images\ball_blue.png" />
+    <Resource Include="Images\ball_green.png" />
+    <Resource Include="Images\ball_red.png" />
+    <Resource Include="Images\box.png" />
+    <Resource Include="Images\bt_add.png" />
+    <Resource Include="Images\bt_apply.png" />
+    <Resource Include="Images\bt_backward.png" />
+    <Resource Include="Images\bt_delete.png" />
+    <Resource Include="Images\bt_eject.png" />
+    <Resource Include="Images\bt_forward.png" />
+    <Resource Include="Images\bt_pause.png" />
+    <Resource Include="Images\bt_play.png" />
+    <Resource Include="Images\bt_skip_backward.png" />
+    <Resource Include="Images\bt_skip_forward.png" />
+    <Resource Include="Images\bt_stop.png" />
+    <Resource Include="Images\calculator.png" />
+    <Resource Include="Images\calendar.png" />
+    <Resource Include="Images\chart.png" />
+    <Resource Include="Images\computer.png" />
+    <Resource Include="Images\computer_group.png" />
+    <Resource Include="Images\contact.png" />
+    <Resource Include="Images\data.png" />
+    <Resource Include="Images\diagnostic.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\favorits.png" />
+    <Resource Include="Images\files.png" />
+    <Resource Include="Images\find.png" />
+    <Resource Include="Images\folder.png" />
+    <Resource Include="Images\image.png" />
+    <Resource Include="Images\mail.png" />
+    <Resource Include="Images\notes.png" />
+    <Resource Include="Images\paste.png" />
+    <Resource Include="Images\picture.png" />
+    <Resource Include="Images\print.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\settings.png" />
+    <Resource Include="Images\time.png" />
+    <Resource Include="Images\user.png" />
+    <Resource Include="Images\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Pencil.png" />
+    <Resource Include="Images\Backup.png" />
+    <Resource Include="Images\Bank.png" />
+    <Resource Include="Images\BudgetReport.png" />
+    <Resource Include="Images\Calc.png" />
+    <Resource Include="Images\CashFlowReport.png" />
+    <Resource Include="Images\Clear.png" />
+    <Resource Include="Images\Coins.png" />
+    <Resource Include="Images\Copy.png" />
+    <Resource Include="Images\CreditCards.png" />
+    <Resource Include="Images\Cut.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\Help.png" />
+    <Resource Include="Images\Paste_small.png" />
+    <Resource Include="Images\Reconcile.png" />
+    <Resource Include="Images\Transfer.png" />
+    <Resource Include="Images\TrendReport.png" />
+    <Resource Include="Images\Wave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eraser.png" />
+    <Resource Include="Images\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\color.png" />
+    <Resource Include="Images\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\props.ico" />
+    <Resource Include="Icons\view_remove.ico" />
+    <Resource Include="Icons\view_tree.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DockingLibrary.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DockingLibrary\DockingLibrary.csproj">
+      <Project>{fa274cd2-57bb-4eb0-b101-a562adb1685e}</Project>
+      <Name>DockingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

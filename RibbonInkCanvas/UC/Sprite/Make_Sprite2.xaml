@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="RibbonInkCanvas.UC.UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignWidth="150" Padding="5,5,5,5" >
+    <Grid>
+        <GroupBox Header="마스크 원형" Padding="10,20,10,10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton></RadioButton>
+                    <TextBlock Text=" 사각형"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <RadioButton></RadioButton>
+                    <TextBlock Text=" 원형"></TextBlock>
+                </StackPanel>
+
+            </StackPanel>
+            
+        </GroupBox>
+
+    </Grid>
+</UserControl>

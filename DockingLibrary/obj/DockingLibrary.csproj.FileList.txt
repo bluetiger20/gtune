@@ -1,0 +1,84 @@
+obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockingLibrary_MarkupCompile.cache
+.\bin\Release\DockingLibrary.dll
+.\bin\Release\DockingLibrary.pdb
+obj\Release\DockingLibrary.g.resources
+obj\Release\DockingLibrary.Properties.Resources.resources
+obj\Release\DockingLibrary.csproj.GenerateResource.Cache
+obj\Release\DockingLibrary.dll
+obj\Release\DockingLibrary.pdb
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockManager.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockManager.g.cs
+.\bin\Debug\DockingLibrary.dll
+.\bin\Debug\DockingLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockManager.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockManager.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.cache
+obj\Debug\DockingLibrary.g.resources
+obj\Debug\DockingLibrary.Properties.Resources.resources
+obj\Debug\DockingLibrary.csproj.GenerateResource.Cache
+obj\Debug\DockingLibrary.dll
+obj\Debug\DockingLibrary.pdb
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockablePane.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DocumentsPane.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockablePane.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DocumentsPane.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockingLibrary_MarkupCompile.lref
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.lref
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockingGrid.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\DockingGrid.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockManager.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.cache
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.lref
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DockManager.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\themes\generic.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\themes\DockingLibraryResources.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\themes\DockingLibraryResources.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\themes\generic.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\themes\DockingLibraryResources.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\themes\generic.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\FloatingWindow.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\FloatingWindow.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\OverlayWindow.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Release\OverlayWindow.g.cs
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.baml
+C:\Documents and Settings\Francesco\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.baml
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.g.cs
+C:\Documents and Settings\Utente\Documenti\Visual Studio 2005\Projects\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\themes\DockingLibraryResources.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockingGrid.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockManager.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\FloatingWindow.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\OverlayWindow.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.cache
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockingLibrary_MarkupCompile.lref
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockManager.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\themes\generic.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DockablePane.baml
+D:\Downloads\Source\DockingLibrary\DockingLibrary\obj\Debug\DocumentsPane.baml

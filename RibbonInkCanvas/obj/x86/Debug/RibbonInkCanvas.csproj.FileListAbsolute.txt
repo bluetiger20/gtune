@@ -1,0 +1,28 @@
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\bin\Debug\RibbonInkCanvas.exe
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\bin\Debug\RibbonInkCanvas.pdb
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\bin\Debug\RibbonControlsLibrary.dll
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\MainWindow.baml
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\MainWindow.g.cs
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\App.g.cs
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas_MarkupCompile.cache
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.g.resources
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.Properties.Resources.resources
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.exe
+c:\users\onestone.dstrict\documents\visual studio 2010\Projects\RibbonInkCanvas\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.exe
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\bin\Debug\RibbonInkCanvas.exe
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\bin\Debug\RibbonInkCanvas.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.csprojResolveAssemblyReference.cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\MainWindow.baml
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\App.g.cs
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas_MarkupCompile.cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.g.resources
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.Properties.Resources.resources
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.csproj.GenerateResource.Cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\UC\UserControl1.baml
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\RibbonInkCanvas (2)\RibbonInkCanvas\obj\x86\Debug\UC\UserControl1.g.cs

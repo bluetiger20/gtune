@@ -1,0 +1,26 @@
+﻿<custom:DocumentContent
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:custom="clr-namespace:DockingLibrary;assembly=DockingLibrary" 
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    x:Class="DockingLibraryDemo.DocWindow" 
+    Title="Doc" Height="300" Width="800"
+    >
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"></ColumnDefinition>
+            <ColumnDefinition Width="180"></ColumnDefinition>
+            <ColumnDefinition Width="180"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="window_panel1"  Grid.Column="0" Height="Auto" ></StackPanel>
+        <StackPanel x:Name="window_panel2"  Grid.Column="1" Height="Auto" ></StackPanel>
+        <StackPanel x:Name="window_panel3"  Grid.Column="2" Height="Auto" ></StackPanel>
+        <StackPanel x:Name="window_panel4"  Grid.Column="3" Height="Auto" ></StackPanel>
+
+
+
+    </Grid>
+</custom:DocumentContent>
