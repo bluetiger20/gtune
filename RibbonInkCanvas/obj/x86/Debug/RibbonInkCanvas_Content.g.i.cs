@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dockinglibrary.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ribboncontrolslibrary.dll")]
 
 

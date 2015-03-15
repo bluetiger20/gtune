@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using RibbonInkCanvas.UC;
 using RibbonInkCanvas.UC.Sprite;
 using RibbonInkCanvas.UC.Sound;
+using RibbonInkCanvas.UC.Background;
 using System.Diagnostics;
 using DockingLibraryDemo;
 using DockingLibrary;
@@ -24,6 +25,7 @@ namespace RibbonInkCanvas
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int tab_index = 0;
         public TreeViewItem tree_sprite;
         private PropertyWindow propertyWindow = new PropertyWindow();
         private ExplorerWindow explorerWindow = new ExplorerWindow();
@@ -77,21 +79,23 @@ namespace RibbonInkCanvas
             treeView1.Items.Add(tree_room);
             treeView1.Items.Add(tree_sound);
             treeView1.Items.Add(tree_game_info);
-            
+
+            #endregion
 
             #region ADD_contextMenu //  콘텍스트 메뉴에 아이템 추가
             ContextMenu Sprite_ContextMenu = new ContextMenu();
+            //Sprite_ContextMenu.Items.Add();
             Contextmenu_Add(Sprite_ContextMenu, tree_sprite, "스프라이트 만들기", "make_sprite_window");
             Contextmenu_Add(Sprite_ContextMenu, tree_sprite, "스프라이트 수정하기", "modify_sprite_window");
             ContextMenu SoundContextMenu = new ContextMenu();
             Contextmenu_Add(SoundContextMenu, tree_sound, "사운드 추가", "new_sound");
-      
+            ContextMenu BackgroundContextMenu = new ContextMenu();
+            Contextmenu_Add(BackgroundContextMenu, tree_background, "백그라운드 이미지", "background_image");
 
             #endregion
-            #endregion
+           
 
-            #region right_panel
-            #endregion
+        
         }
 
 
@@ -159,15 +163,17 @@ namespace RibbonInkCanvas
             return false;
         }
 
-        private void NewDocument()
+        private void NewDocument(string title)
         {
-            string title = "Document";
-           
-            while (ContainsDocument(title + i.ToString()))
-                i++;
+            //string title = name;
+            //string title = "Document";
+            //while (ContainsDocument(title + i.ToString()))
+                //i++;
             DocWindow doc = new DocWindow();
             doc.DockManager = dockManager;
-            doc.Title = title + i.ToString();
+            doc.Title = title+(++tab_index).ToString();
+            i = tab_index;
+            //doc.Title = title + i.ToString();
             
             doc.Show();
            doclist.Add(doc);
@@ -210,21 +216,20 @@ namespace RibbonInkCanvas
         void Contextmenu_Add( ContextMenu mnuContextMenu, TreeViewItem tree_item , string Text, string method)  // 콘텍스트 메뉴 추가하기
         {
             MenuItem a = new MenuItem();
-            //a.Background = new SolidColorBrush(Colors.Gray);
             a.Header = Text;
-            //TextBlock menu = new TextBlock();
-            //menu.Text = Text;
-
             switch (method)
             {
                 case "modify_sprite_window":
-                    a.MouseEnter += modify_sprite_window;
+                    a.PreviewMouseLeftButtonDown += modify_sprite_window;
                     break;
                 case "make_sprite_window":
-                    a.MouseEnter += make_sprite_window;
+                    a.PreviewMouseLeftButtonDown += make_sprite_window;
                     break;
                 case "new_sound":
-                    a.MouseEnter += new_sound;
+                    a.PreviewMouseLeftButtonDown += new_sound;
+                    break;
+                case "background_image":
+                    a.PreviewMouseLeftButtonDown += background_image;
                     break;
             }
 
@@ -235,21 +240,23 @@ namespace RibbonInkCanvas
 
 
 
-        void new_sound(object sender, RoutedEventArgs e)          // 스프라이트 만들기 화면 그리기
+        void new_sound(object sender, MouseButtonEventArgs e)        // 스프라이트 만들기 화면 그리기
         {
-            //Clear_stackpanel();
-            NewDocument();
+           // Clear_stackpanel();
+            NewDocument("Sound");
 
             window_panel1 = doclist[i-1].window_panel1;
             window_panel1.Children.Add(new Sound());
 
         }
 
-        void make_sprite_window(object sender, RoutedEventArgs e)          // 스프라이트 만들기 화면 그리기
+        void make_sprite_window(object sender, MouseButtonEventArgs e)          // 스프라이트 만들기 화면 그리기
         {
             //Clear_stackpanel();
 
-            NewDocument();
+            NewDocument("make_Sprite");
+
+
             window_panel1 = doclist[i - 1].window_panel1;
             window_panel2 = doclist[i - 1].window_panel2;
             window_panel3 = doclist[i - 1].window_panel3;
@@ -262,25 +269,42 @@ namespace RibbonInkCanvas
 
         }
 
-        void modify_sprite_window(object sender, RoutedEventArgs e)          // 스프라이트 수정하기 화면 그리기
+        void modify_sprite_window(object sender, MouseButtonEventArgs e)          // 스프라이트 수정하기 화면 그리기
         {
-            Clear_stackpanel();
+           // Clear_stackpanel();
+            NewDocument("modify_Sprite");
+            window_panel1 = doclist[i - 1].window_panel1;
+            window_panel2 = doclist[i - 1].window_panel2;
 
-            window_panel1.Children.Add(new UserControl4());
+            window_panel1.Children.Add(new Modify_Sprite1());
             window_panel2.Children.Add(new Modify_Sprite2());
             Grid.SetColumn(window_panel2, 1);
             Grid.SetColumnSpan(window_panel2, 3);
 
         }
 
-        void Clear_stackpanel()                                      // 오른쪽 화면 모두 지우기
+        void background_image(object sender, MouseButtonEventArgs e)          // 백그라운드 이미지 화면 그리기
+        {
+            // Clear_stackpanel();
+            NewDocument("background_image");
+            window_panel1 = doclist[i - 1].window_panel1;
+            window_panel2 = doclist[i - 1].window_panel2;
+
+            window_panel1.Children.Add(new Background_image1());
+            window_panel2.Children.Add(new Background_image2());
+            Grid.SetColumn(window_panel2, 1);
+            Grid.SetColumnSpan(window_panel2, 3);
+
+        }
+
+/*        void Clear_stackpanel()                                      // 오른쪽 화면 모두 지우기
         {
             window_panel1.Children.Clear();
             window_panel2.Children.Clear();
             window_panel3.Children.Clear();
             window_panel4.Children.Clear();
 
-        }
+        }*/
 
 
         #region command
@@ -391,7 +415,7 @@ namespace RibbonInkCanvas
 
         private void RibbonButton_Click_2(object sender, RoutedEventArgs e)
         {
-            NewDocument();
+            NewDocument("RibbonBUtton");
         }
         #endregion
     }

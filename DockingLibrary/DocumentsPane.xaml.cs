@@ -155,27 +155,32 @@ namespace DockingLibrary
             StackPanel a = new StackPanel();
             a.Orientation = System.Windows.Controls.Orientation.Horizontal;
             TextBlock b = new TextBlock();
-            b.Text = content.Title+"khjgb";
+            b.Text = content.Title;
             Style style = this.FindResource("DocumentsTabCloseButtonStyle") as Style;
             Button c = new Button();
-            
-            c.MouseEnter += remove_tab;
+
+            c.PreviewMouseLeftButtonDown += remove_tab;
+            c.Name = b.Text+"_Close";
             c.Style = style;
             c.Width = 15;
             a.Children.Add(b);
             a.Children.Add(c);
-
+            
             item.Header = a;
-            /***************************************************************************************************************************************/
+           
 
           // item.Header = content.Title;
             item.Content = new ContentPresenter();
             (item.Content as ContentPresenter).Content = content.Content;
             item.Style = FindResource("DocTabItemStyle") as Style;
             
-            ht[c] = item.Content;
+            
             //Console.WriteLine(ht[c. ]);
             tbcDocuments.Items.Add(item);
+            ht[c.Name] = item;
+           // Console.WriteLine(("i add index " + tbcDocuments.Items.IndexOf(item)));
+           // ht[c.Name] = (int) tbcDocuments.Items.CurrentPosition +1;
+            //Console.WriteLine("i am"+tbcDocuments.Items.CurrentPosition);
             
             tbcDocuments.SelectedItem = item;
 
@@ -183,22 +188,14 @@ namespace DockingLibrary
                 tbcDocuments.Visibility = Visibility.Visible;
 
         }
-        
 
-        void remove_tab(object sender, RoutedEventArgs e)
+
+        void remove_tab(object sender, MouseButtonEventArgs e) 
         {
-          //  tbcDocuments.Items.Clear();
-
-            tbcDocuments.Items.Remove(ht[((Button)sender)]);
-          //  Console.WriteLine(ht[((Button)sender)]);
-
-
-
-
-
+            tbcDocuments.Items.Remove((TabItem) ht[((Button)sender).Name] );
         }
 
-
+        /***************************************************************************************************************************************/
 
         protected virtual void RemoveItem(ManagedContent content)
         {

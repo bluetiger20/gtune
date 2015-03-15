@@ -12,14 +12,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RibbonInkCanvas.UC
+namespace RibbonInkCanvas.UC.Background
 {
     /// <summary>
-    /// Modify_Sprite1.xaml에 대한 상호 작용 논리
+    /// Background_image1.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Modify_Sprite1 : UserControl
+    public partial class Background_image1 : UserControl
     {
-        public Modify_Sprite1()
+        public Background_image1()
         {
             InitializeComponent();
         }

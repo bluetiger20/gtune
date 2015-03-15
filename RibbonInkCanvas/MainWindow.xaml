@@ -1,7 +1,7 @@
 ﻿<Window x:Class="RibbonInkCanvas.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+          xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
         xmlns:custom="clr-namespace:DockingLibrary;assembly=DockingLibrary" Loaded="OnLoaded" Closing="OnClosing"
         Title="MainWindow" Height="600" Width="900" >
     <Window.Resources>
@@ -51,11 +51,11 @@
                          Executed="EraserCommand_Executed"/>
 
         <r:RibbonCommand x:Key="BrushCommand"
-                         LabelTitle="선그리기"
+                         LabelTitle="New Document"
                          LabelDescription="선그리기를 선택하여 선을 그릴수 있습니다."
-                         SmallImageSource="Images\brush.png"
-                         LargeImageSource="Images\brush.png"
-                         ToolTipTitle="선그리기"
+                         SmallImageSource="Images\New_Doc.png"
+                         LargeImageSource="Images\New_Doc.png"
+                         ToolTipTitle="New Document"
                          ToolTipDescription="선그리기를 선택하여 선을 그릴수 있습니다." 
                          CanExecute="BrushCommand_CanExecute"
                          Executed="BrushCommand_Executed"/>
@@ -152,8 +152,7 @@
             <r:RibbonGroupSizeDefinition>
                 <!-- Control sizes: L,S,S -->
                 <r:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True"/>
-                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False"/>
-                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False"/>
+                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
             </r:RibbonGroupSizeDefinition>
             <!-- Collapsed -->
             <r:RibbonGroupSizeDefinition IsCollapsed="True" />

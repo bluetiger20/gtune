@@ -71,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="contextmenu.cs" />
     <Compile Include="DocWindow.xaml.cs">
       <DependentUpon>DocWindow.xaml</DependentUpon>
     </Compile>
@@ -88,6 +89,12 @@
     <Compile Include="RecentFiles.cs" />
     <Compile Include="UC\Action\Action_modify.xaml.cs">
       <DependentUpon>Action_modify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Background\Background_image1.xaml.cs">
+      <DependentUpon>Background_image1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Background\Background_image2.xaml.cs">
+      <DependentUpon>Background_image2.xaml</DependentUpon>
     </Compile>
     <Compile Include="UC\Sound\Sound.xaml.cs">
       <DependentUpon>Sound.xaml</DependentUpon>
@@ -136,6 +143,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UC\Action\Action_modify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Background\Background_image1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\Background\Background_image2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -277,6 +292,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DockingLibrary.dll" />
+    <Content Include="RibbonControlsLibrary.dll" />
+    <Resource Include="Images\New_Doc.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DockingLibrary\DockingLibrary.csproj">
