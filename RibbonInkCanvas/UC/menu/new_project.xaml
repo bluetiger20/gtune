@@ -1,0 +1,15 @@
+﻿<Window x:Class="RibbonInkCanvas.UC.menu.new_project"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="new_project" Height="400" Width="300">
+    <Grid>
+        <StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <TextBlock>이름 쳐라</TextBlock>
+        <TextBox Name="project_name"></TextBox>
+            
+        </StackPanel>
+        <Button Click="Button_Click_1">addasdg</Button>
+        </StackPanel>
+    </Grid>
+</Window>

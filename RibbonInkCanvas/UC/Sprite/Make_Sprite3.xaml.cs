@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RibbonInkCanvas.UC
+namespace gtune.UC
 {
     /// <summary>
     /// UserControl3.xaml에 대한 상호 작용 논리

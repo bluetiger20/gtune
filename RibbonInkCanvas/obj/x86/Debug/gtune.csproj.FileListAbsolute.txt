@@ -87,6 +87,7 @@ C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonIn
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\DocWindow.baml
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\ExplorerWindow.baml
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\ListWindow.baml
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\MainWindow.baml
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\PropertyWindow.baml
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\Action\Action_modify.baml
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\Background\Background_image1.baml
@@ -100,6 +101,7 @@ C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonIn
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\DocWindow.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\ExplorerWindow.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\ListWindow.g.cs
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\MainWindow.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\PropertyWindow.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\Action\Action_modify.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\Background\Background_image1.g.cs
@@ -113,8 +115,6 @@ C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonIn
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\App.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas_Content.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas_MarkupCompile.cache
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\MainWindow.baml
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\MainWindow.g.cs
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.g.resources
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.Properties.Resources.resources
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\gtune.csproj.GenerateResource.Cache
@@ -128,3 +128,6 @@ C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonIn
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\DockingLibrary.pdb
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.exe
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\menu\new_project.baml
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\UC\menu\new_project.g.cs
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas_MarkupCompile.lref

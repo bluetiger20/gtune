@@ -6,13 +6,9 @@
     >
 
 	<DockPanel LastChildFill="True">
-        <TreeView  x:Name="treeView1"  Width="200" Background="#f5f5f5" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <TreeView  x:Name="treeView1"   Background="#f5f5f5" BorderBrush="{x:Null}" Foreground="{x:Null}">
         </TreeView>
-        <StackPanel DockPanel.Dock="Bottom"  Width="1" >
-			<TextBlock Text="{Binding ElementName=_lstRecents, Path=SelectedItem.FileName}"/>
-			<TextBlock Text="{Binding ElementName=_lstRecents, Path=SelectedItem.Path}"/>
-		</StackPanel>
-        <ListBox Name="_lstRecents"   Width="1" IsSynchronizedWithCurrentItem="True"/>
+       
 	</DockPanel>
 
 </custom:DockableContent>

@@ -12,8 +12,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RibbonInkCanvas.UC.Background
+namespace gtune.UC.Background
 {
+    
     /// <summary>
     /// Background_image2.xaml에 대한 상호 작용 논리
     /// </summary>
@@ -22,6 +23,7 @@ namespace RibbonInkCanvas.UC.Background
         public Background_image2()
         {
             InitializeComponent();
+            
         }
     }
 }

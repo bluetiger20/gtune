@@ -11,11 +11,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using RibbonInkCanvas.UC;
+using gtune.UC;
 
 
 
-namespace RibbonInkCanvas
+namespace gtune
 {
 
     public class my_treeview_panel

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RibbonInkCanvas.Properties
+namespace gtune.Properties
 {
 
 

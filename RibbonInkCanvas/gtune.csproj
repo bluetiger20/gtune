@@ -75,6 +75,8 @@
     <Compile Include="DocWindow.xaml.cs">
       <DependentUpon>DocWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditableTextBlock.cs" />
+    <Compile Include="EditableTextBlockAdorner.cs" />
     <Compile Include="ExplorerWindow.xaml.cs">
       <DependentUpon>ExplorerWindow.xaml</DependentUpon>
     </Compile>
@@ -95,6 +97,9 @@
     </Compile>
     <Compile Include="UC\Background\Background_image2.xaml.cs">
       <DependentUpon>Background_image2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC\menu\new_project.xaml.cs">
+      <DependentUpon>new_project.xaml</DependentUpon>
     </Compile>
     <Compile Include="UC\Sound\Sound.xaml.cs">
       <DependentUpon>Sound.xaml</DependentUpon>
@@ -151,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UC\Background\Background_image2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC\menu\new_project.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

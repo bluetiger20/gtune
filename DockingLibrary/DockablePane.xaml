@@ -159,7 +159,7 @@
 		<Border Name="PaneHeader" Height="18" Width="Auto" DockPanel.Dock="Top" BorderBrush="#FF000000" MouseDown="OnHeaderMouseDown" MouseUp="OnHeaderMouseUp" MouseMove="OnHeaderMouseMove">
 			<Border.Background>
 				<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-					<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+					<GradientStop Color="#deebf7" Offset="0"/>
 					<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
 				</LinearGradientBrush>
 			</Border.Background>
@@ -167,7 +167,7 @@
 				<Grid Margin="2,3,0,4" Width="Auto" Height="Auto">
 					<Ellipse Width="4" Height="4" HorizontalAlignment="Right" Margin="0,0,5.5,0" VerticalAlignment="Bottom">
 						<Ellipse.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+							<SolidColorBrush Color="#deebf7"/>
 						</Ellipse.Fill>
 						<Ellipse.Stroke>
 							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
@@ -178,7 +178,7 @@
 					</Ellipse>
 					<Ellipse HorizontalAlignment="Left" VerticalAlignment="Top" Width="4" Height="4">
 						<Ellipse.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+							<SolidColorBrush Color="#deebf7"/>
 						</Ellipse.Fill>
 						<Ellipse.Stroke>
 							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
@@ -189,7 +189,7 @@
 					</Ellipse>
 					<Ellipse Height="4" HorizontalAlignment="Right" VerticalAlignment="Top" Width="4">
 						<Ellipse.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+							<SolidColorBrush Color="#deebf7"/>
 						</Ellipse.Fill>
 						<Ellipse.Stroke>
 							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
@@ -202,7 +202,7 @@
 				<Grid x:Name="btnClose" PreviewMouseDown="OnBtnCloseMouseDown" Width="16" Height="Auto"  DockPanel.Dock="Right" Margin="0,1,0,1" Style="{DynamicResource DockingHeaderButtonStyle}" >
 					<Grid.Background>
 						<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+							<GradientStop Color="#deebf7" Offset="0"/>
 							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
 						</LinearGradientBrush>
 					</Grid.Background>
@@ -214,7 +214,7 @@
 						<Rectangle.Fill>
 							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
 								<GradientStop Color="#FF000000" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+                                <GradientStop Color="DarkRed" Offset="1"/>
 							</LinearGradientBrush>
 						</Rectangle.Fill>
 						<Rectangle.Stroke>
@@ -230,13 +230,13 @@
 				<Grid x:Name="btnMenu" PreviewMouseDown="OnBtnMenuMouseDown" Width="16" Height="Auto" Margin="0,0,0,0" DockPanel.Dock="Right">
 					<Grid.Background>
 						<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+							<GradientStop Color="#deebf7" Offset="0"/>
 							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
 						</LinearGradientBrush>
 					</Grid.Background>
-					<Path Stretch="Fill" Stroke="#FF000000" StrokeEndLineCap="Square" StrokeLineJoin="Round" StrokeThickness="0" Height="Auto" Data="M3,3 L13,3 L8,15" Margin="3,6,3,3">
+                    <Path Stretch="Fill" Stroke="#deebf7" StrokeEndLineCap="Square" StrokeLineJoin="Round" StrokeThickness="0" Height="Auto" Data="M3,3 L13,3 L8,15" Margin="3,6,3,3">
 						<Path.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>
+                            <SolidColorBrush Color="DarkRed"/>
 						</Path.Fill>
 					</Path>
 					<Grid.ContextMenu >

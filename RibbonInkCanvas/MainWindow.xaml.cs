@@ -11,22 +11,31 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using RibbonInkCanvas.UC;
-using RibbonInkCanvas.UC.Sprite;
-using RibbonInkCanvas.UC.Sound;
-using RibbonInkCanvas.UC.Background;
 using System.Diagnostics;
+using System.Windows.Media.Animation;
 using DockingLibraryDemo;
 using DockingLibrary;
-namespace RibbonInkCanvas
+using gtune.UC;
+using gtune.UC.Background;
+using gtune.UC.Sound;
+using gtune.UC.Sprite;
+using RibbonInkCanvas.UC.menu;
+
+namespace gtune
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
         private int tab_index = 0;
-        public TreeViewItem tree_sprite;
+        private TreeViewItem tree_sprite;
+        private TreeViewItem tree_background;
+        private TreeViewItem tree_objecta;
+        private TreeViewItem tree_room;
+        private TreeViewItem tree_sound;
+        private TreeViewItem tree_game_info;
         private PropertyWindow propertyWindow = new PropertyWindow();
         private ExplorerWindow explorerWindow = new ExplorerWindow();
         private ListWindow listWindow = new ListWindow();
@@ -35,10 +44,13 @@ namespace RibbonInkCanvas
 
         private int i = 1;
         internal static RecentFiles files = new RecentFiles();
-        StackPanel window_panel1 ;
-        StackPanel window_panel2 ;
-        StackPanel window_panel3 ;
-        StackPanel window_panel4;
+        public static StackPanel window_panel1;
+        public static StackPanel window_panel2;
+        public static StackPanel window_panel3;
+        public static StackPanel window_panel4;
+        
+        
+        
         public MainWindow()
         {
 
@@ -61,11 +73,12 @@ namespace RibbonInkCanvas
             my_treeview_panel game_info = new my_treeview_panel("게임 정보", 1);
 
             tree_sprite = new TreeViewItem();
-            TreeViewItem tree_background = new TreeViewItem();
-            TreeViewItem tree_objecta = new TreeViewItem();
-            TreeViewItem tree_room = new TreeViewItem();
-            TreeViewItem tree_sound = new TreeViewItem();
-            TreeViewItem tree_game_info = new TreeViewItem();
+             tree_background = new TreeViewItem();
+             tree_objecta = new TreeViewItem();
+             tree_room = new TreeViewItem();
+             tree_sound = new TreeViewItem();
+             tree_game_info = new TreeViewItem();
+
             TreeView treeView1 = explorerWindow.treeView1;
             tree_sprite.Header = sprite.item;
             tree_background.Header = background.item;
@@ -287,14 +300,18 @@ namespace RibbonInkCanvas
         {
             // Clear_stackpanel();
             NewDocument("background_image");
+            tree_background.Items.Add("background_image");
+
+
             window_panel1 = doclist[i - 1].window_panel1;
             window_panel2 = doclist[i - 1].window_panel2;
 
             window_panel1.Children.Add(new Background_image1());
             window_panel2.Children.Add(new Background_image2());
+
             Grid.SetColumn(window_panel2, 1);
             Grid.SetColumnSpan(window_panel2, 3);
-
+            
         }
 
 /*        void Clear_stackpanel()                                      // 오른쪽 화면 모두 지우기
@@ -415,8 +432,18 @@ namespace RibbonInkCanvas
 
         private void RibbonButton_Click_2(object sender, RoutedEventArgs e)
         {
-            NewDocument("RibbonBUtton");
+            var NewWindow = new new_project();
+            NewWindow.Show();
+
         }
+
         #endregion
+
+
+     
+
+
     }
+
+
 }
