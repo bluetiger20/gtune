@@ -1,11 +1,12 @@
-F:\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.dll
-F:\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.pdb
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\GeneratedInternalTypeHelper.g.cs
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.cache
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.lref
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Themes\Generic.baml
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.g.resources
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.Properties.Resources.resources
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.csproj.GenerateResource.Cache
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.dll
-F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.dll
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.csprojResolveAssemblyReference.cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.lref
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Themes\Generic.baml
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.g.resources
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.Properties.Resources.resources
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.csproj.GenerateResource.Cache
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.dll
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.pdb

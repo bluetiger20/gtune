@@ -15,7 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DevExpress.Data.Filtering;
 using RibbonInkCanvas.UC;
-using Color = System.Drawing.Color;
+using Animator;
+using Animator = Animator.Animator;
 
 namespace gtune.UC
 {
@@ -59,15 +60,21 @@ namespace gtune.UC
         
         string myUri = "";
 
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
            
             myUri = openfile_dialog(myUri);
-
+           
             if (myUri != "")
             {
 
+                form.uc_Makesprite3.image_resource.ImageSource = new BitmapImage(
+                     new Uri(myUri)
+                );
+                form.uc_Makesprite3.image_resource.HorizontalOffset =
+                    form.uc_Makesprite3.image_resource.ImageSource.Width/(double)10;
+                form.uc_Makesprite3.image_resource.VerticalOffset =
+                    form.uc_Makesprite3.image_resource.ImageSource.Height;
 
                 //form.uc_Makesprite3.image_resource.ImageSource = new BitmapImage(
                 //        new Uri(myUri)
@@ -83,10 +90,10 @@ namespace gtune.UC
                 //img.StreamSource = ms;
                 //img.EndInit();
 
-                
 
 
-               // form.uc_Makesprite3.image_resource.Source = img;
+
+                // form.uc_Makesprite3.image_resource.Source = img;
                 //img_width.Text = img.Width.ToString();
                 //img_height.Text = img.Height.ToString();
             }

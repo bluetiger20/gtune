@@ -2,12 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:animator="clr-namespace:Animator;assembly=Animator"
              mc:Ignorable="d" 
              Padding="5,5,5,5" >
     <Grid Name="m_grid">
-        <GroupBox Name="groupa" Header="이미지 원형" Width="240" Height="300"  Padding="10,20,10,10">
-           <Image Name="image_resource"></Image>
-        </GroupBox>
+        <!--<GroupBox Name="groupa" Header="이미지 원형" Width="240" Height="300"  Padding="10,20,10,10">-->
+        <animator:Animator Name ="image_resource" ImageSource="images.jpg" Interval="0:0:0.1"
+                        HorizontalOffset="60" Margin="0"
+                        VerticalOffset="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!--</GroupBox>-->
     </Grid>
 </UserControl>

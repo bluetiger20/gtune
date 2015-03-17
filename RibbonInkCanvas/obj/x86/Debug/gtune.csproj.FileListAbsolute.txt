@@ -131,7 +131,5 @@ C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonIn
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.exe.licenses
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.exe
 C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\obj\x86\Debug\RibbonInkCanvas.pdb
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\SpriteCanvas.dll
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\SpriteWorld.dll
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\SpriteCanvas.pdb
-C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\SpriteWorld.pdb
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\Animator.dll
+C:\Users\KMINSU-PC-W1\Google 드라이브\노트북 공유\창과\gtune\RibbonInkCanvas\bin\Debug\Animator.pdb
