@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace gtune.UC
 {
     /// <summary>
-    /// UserControl2.xaml에 대한 상호 작용 논리
+    /// Make_Sprite2.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class UserControl2 : UserControl
+    public partial class Make_Sprite2 : UserControl
     {
-        public UserControl2()
+        public Make_Sprite2()
         {
             InitializeComponent();
         }

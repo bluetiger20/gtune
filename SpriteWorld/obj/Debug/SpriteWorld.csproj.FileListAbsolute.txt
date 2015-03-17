@@ -1,0 +1,7 @@
+F:\Sprites_src\SpriteWorld\bin\Debug\SpriteWorld.dll
+F:\Sprites_src\SpriteWorld\bin\Debug\SpriteWorld.pdb
+F:\Sprites_src\SpriteWorld\bin\Debug\SpriteCanvas.dll
+F:\Sprites_src\SpriteWorld\bin\Debug\SpriteCanvas.pdb
+F:\Sprites_src\SpriteWorld\obj\Debug\SpriteWorld.csprojResolveAssemblyReference.cache
+F:\Sprites_src\SpriteWorld\obj\Debug\SpriteWorld.dll
+F:\Sprites_src\SpriteWorld\obj\Debug\SpriteWorld.pdb

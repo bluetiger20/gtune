@@ -23,7 +23,7 @@ namespace gtune.UC.Background
         public Background_image2()
         {
             InitializeComponent();
-            
         }
+
     }
 }

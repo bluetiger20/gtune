@@ -2,18 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
           xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
-        xmlns:custom="clr-namespace:DockingLibrary;assembly=DockingLibrary" Loaded="OnLoaded" Closing="OnClosing"
+        xmlns:custom="clr-namespace:DockingLibrary;assembly=DockingLibrary"
+        Loaded="OnLoaded" Closing="OnClosing"
         Title="MainWindow" Height="600" Width="900" >
     <Window.Resources>
-        <r:RibbonCommand x:Key="CloseCommand" 
-                         LabelTitle="닫기"
-                         LabelDescription="프로그램을 종료합니다."
-                         ToolTipTitle="프로그램 닫기"
-                         ToolTipDescription="프로그램을 종료합니다. 종료하기 전에 변경된 데이터를 저장하시기 바랍니다."
-                         SmallImageSource="Images\delete.png"
-                         LargeImageSource="Images\delete.png" 
-                         CanExecute="CloseCommand_CanExecute"  
-                         Executed="CloseCommand_Executed"/>
         <r:RibbonCommand x:Key="SaveCommand" 
                          LabelTitle="저장"
                          LabelDescription="변경된 내용을 저장합니다."
@@ -25,18 +17,59 @@
                          Executed="SaveCommand_Executed"/>
         <r:RibbonCommand x:Key="NewCommand" 
                          LabelTitle="새로만들기"
-                         LabelDescription="새로운 그리기를 시작합니다."
+                         LabelDescription="새로운 프로젝트 시작합니다."
                          ToolTipTitle="새로만들기"
                          ToolTipDescription="새로운 그리기를 시작합니다."
-                         SmallImageSource="Images\files.png"
-                         LargeImageSource="Images\files.png" 
+                         SmallImageSource="Images\New_Doc.png"
+                         LargeImageSource="Images\New_Doc.png" 
+                         CanExecute="NewCommand_CanExecute"
+                         Executed="NewCommand_Executed"/>
+
+        <r:RibbonCommand x:Key="Save_as_projectCommand" 
+                         LabelTitle="프로젝트 저장"
+                         LabelDescription="프로젝트를 저장합니다."
+                         ToolTipTitle="프로젝트 저장"
+                         ToolTipDescription="프로젝트를 저장합니다."
+                         SmallImageSource="Images\save_as_project.png"
+                         LargeImageSource="Images\save_as_project.png" 
+                         CanExecute="NewCommand_CanExecute"
+                         Executed="NewCommand_Executed"/>
+
+        <r:RibbonCommand x:Key="Save_as_singlefiletCommand" 
+                         LabelTitle="단일 파일 저장"
+                         LabelDescription="단일 파일 저장을 저장합니다."
+                         ToolTipTitle="단일 파일 저장"
+                         ToolTipDescription="단일 파일 저장울 저장합니다."
+                         SmallImageSource="Images\savs_as_single_file.png"
+                         LargeImageSource="Images\savs_as_single_file.png" 
+                         CanExecute="NewCommand_CanExecute"
+                         Executed="NewCommand_Executed"/>
+
+        <r:RibbonCommand x:Key="close_projectCommand" 
+                         LabelTitle="프로젝트 종료"
+                         LabelDescription="프로젝트를 종료합니다."
+                         ToolTipTitle="프로젝트 종료"
+                         ToolTipDescription="프로젝트를 종료합니다."
+                         SmallImageSource="Images\close_project.png"
+                         LargeImageSource="Images\close_project.png" 
+                         CanExecute="NewCommand_CanExecute"
+                         Executed="NewCommand_Executed"/>
+
+
+        <r:RibbonCommand x:Key="Open_Command" 
+                         LabelTitle="열기"
+                         LabelDescription="기존 프로젝트 엽니다."
+                         ToolTipTitle="프로젝트 열기"
+                         ToolTipDescription="기존 프로젝트 엽니다."
+                         SmallImageSource="Images\folder.png"
+                         LargeImageSource="Images\folder.png" 
                          CanExecute="NewCommand_CanExecute"
                          Executed="NewCommand_Executed"/>
         <r:RibbonCommand x:Key="ApplicatioMenuCommand"
                          LabelTitle="Application Button"
                          LabelDescription="Application Button."
-                         SmallImageSource="Images\Pencil.png"
-                         LargeImageSource="Images\Pencil.png"
+                         SmallImageSource="Images\Start_Menu.png"
+                         LargeImageSource="Images\Start_Menu.png"
                          ToolTipTitle="Ribbon Ink Canvas"
                          ToolTipDescription="Click here to open Ribbon IncCanvas Menu." />
 
@@ -168,11 +201,15 @@
         <StackPanel Grid.Row="0"  Orientation="Vertical"  >
             <r:Ribbon DockPanel.Dock="Top">
                 <r:Ribbon.ApplicationMenu>
-                    <r:RibbonApplicationMenu Command="{StaticResource ApplicatioMenuCommand}" >
+                    <r:RibbonApplicationMenu Command="{StaticResource ApplicatioMenuCommand}">
                         <r:RibbonApplicationMenuItem Command="{StaticResource NewCommand}" />
+                        <r:RibbonApplicationMenuItem Command="{StaticResource Open_Command}" />
                         <r:RibbonApplicationMenuItem Command="{StaticResource SaveCommand}" />
-                        <r:RibbonSeparator />
-                        <r:RibbonApplicationMenuItem Command="{StaticResource CloseCommand}" />
+                        <r:RibbonApplicationMenuItem Command="{StaticResource Save_as_projectCommand}" />
+                        <r:RibbonApplicationMenuItem Command="{StaticResource Save_as_singlefiletCommand}" />
+                        <r:RibbonApplicationMenuItem Command="{StaticResource close_projectCommand}" />
+
+
 
                     </r:RibbonApplicationMenu>
                 </r:Ribbon.ApplicationMenu>
@@ -224,9 +261,10 @@
                 </r:RibbonTab>
             </r:Ribbon>
         </StackPanel>
-        <Grid Grid.Row="1" Background="#f5f5f5" Margin="2,0,0,0">
-
-            <custom:DockManager Name ="dockManager" Height="Auto" Background="#f5f5f5"/>
+        <Grid   Grid.Row="1" Background="#f5f5f5" Margin="2,0,0,0">
+            
+                <custom:DockManager Name ="dockManager" Height="Auto" Background="#f5f5f5"/>
+                
             <!--<Grid.ColumnDefinitions>
                 <ColumnDefinition Width="159" />
                 <ColumnDefinition Width="*" />

@@ -34,7 +34,7 @@ namespace gtune
                     
                 case 1:
                     image = new Image();
-                    image.Source = new BitmapImage(new Uri(@"\Images\Transfer.png", UriKind.Relative));
+                    image.Source = new BitmapImage(new Uri(@"\Images\small_folder.png", UriKind.Relative));
                     image.Width = 10;
                     image.Height = 10;
                     break;

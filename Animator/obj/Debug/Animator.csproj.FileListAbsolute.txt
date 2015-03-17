@@ -1,0 +1,11 @@
+F:\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.dll
+F:\gifanimator\GIFAnimator\Animator\bin\Debug\Animator.pdb
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.cache
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator_MarkupCompile.lref
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Themes\Generic.baml
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.g.resources
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.Properties.Resources.resources
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.csproj.GenerateResource.Cache
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.dll
+F:\gifanimator\GIFAnimator\Animator\obj\Debug\Animator.pdb

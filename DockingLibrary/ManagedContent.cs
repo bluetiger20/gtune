@@ -16,6 +16,13 @@ namespace DockingLibrary
     public abstract class ManagedContent : Window
     {
         protected Pane _containerPane = null;
+        
+        
+        
+        public int gtune_type;
+        public object gtune_class;
+
+
 
         public DockManager DockManager;
 

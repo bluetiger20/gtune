@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -34,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -54,6 +56,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -80,6 +83,8 @@
     <Compile Include="ExplorerWindow.xaml.cs">
       <DependentUpon>ExplorerWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="gtune_class\gtune_background.cs" />
+    <Compile Include="gtune_class\gtune_sprite.cs" />
     <Compile Include="ListWindow.xaml.cs">
       <DependentUpon>ListWindow.xaml</DependentUpon>
     </Compile>
@@ -216,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\app.png" />
-    <Resource Include="Images\applications.png" />
     <Resource Include="Images\ball_blue.png" />
     <Resource Include="Images\ball_green.png" />
     <Resource Include="Images\ball_red.png" />
@@ -301,6 +305,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DockingLibrary.dll" />
+    <Resource Include="Images\save_as_project.png" />
+    <Resource Include="Images\savs_as_single_file.png" />
+    <Resource Include="Images\close_project.png" />
+    <Resource Include="Images\Start_Menu.png" />
+    <Resource Include="Images\small_folder.png" />
+    <Resource Include="Images\sound.png" />
     <Content Include="RibbonControlsLibrary.dll" />
     <Resource Include="Images\New_Doc.png" />
   </ItemGroup>

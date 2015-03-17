@@ -6,7 +6,7 @@
         <StackPanel>
         <StackPanel Orientation="Horizontal">
         <TextBlock>이름 쳐라</TextBlock>
-        <TextBox Name="project_name"></TextBox>
+        <TextBox Width="200" Name="project_name"></TextBox>
             
         </StackPanel>
         <Button Click="Button_Click_1">addasdg</Button>

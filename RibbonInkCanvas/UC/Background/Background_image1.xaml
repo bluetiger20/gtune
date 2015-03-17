@@ -20,9 +20,9 @@
             <Button Content="편집"  Margin="0,10,0,0" Width="90" Height="28"/>
             <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" >
                 <TextBlock Text=" Width :"   Width="Auto" />
-                <TextBlock Text=""   Width="20" Margin="0,0,5,0"/>
+                <TextBlock Name="img_width" Text=""   Width="20" Margin="0,0,5,0"/>
                 <TextBlock Text=" Height :"   Width="Auto"/>
-                <TextBlock Text=""   Width="20"/>
+                <TextBlock Name="img_height" Text=""   Width="20"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" >
                 <CheckBox Margin="0,10,0,0">타일셋 사용</CheckBox>

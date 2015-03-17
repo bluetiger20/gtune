@@ -11,7 +11,7 @@
 
     <Grid>
         <GroupBox Header="이미지 원형" Width="360" Height="300"  Padding="10,20,10,10">
-            <Image></Image>
+            <Image Name="Background_image"></Image>
         </GroupBox>
 
     </Grid>

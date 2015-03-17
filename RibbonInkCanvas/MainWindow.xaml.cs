@@ -19,8 +19,9 @@ using gtune.UC;
 using gtune.UC.Background;
 using gtune.UC.Sound;
 using gtune.UC.Sprite;
+using RibbonInkCanvas;
+using RibbonInkCanvas.gtune_class;
 using RibbonInkCanvas.UC.menu;
-
 namespace gtune
 {
     /// <summary>
@@ -41,13 +42,18 @@ namespace gtune
         private ListWindow listWindow = new ListWindow();
         DocWindow doc = new DocWindow();
         List<DocWindow> doclist = new List<DocWindow>();
-
+        
         private int i = 1;
         internal static RecentFiles files = new RecentFiles();
         public static StackPanel window_panel1;
         public static StackPanel window_panel2;
         public static StackPanel window_panel3;
         public static StackPanel window_panel4;
+        public Background_image1 uc_Background_image1;
+        public Background_image2 uc_Background_image2;
+        public Make_sprite uc_Makesprite1;
+        public Make_Sprite2 uc_Makesprite2;
+        public Make_Sprite3 uc_Makesprite3;
         
         
         
@@ -63,6 +69,9 @@ namespace gtune
              window_panel2 = doc.window_panel2;
              window_panel3 = doc.window_panel3;
              window_panel4 = doc.window_panel4;
+          
+
+
             #region treeview  //트리뷰에 기본 아이템 추가
 
             my_treeview_panel sprite = new my_treeview_panel("스프라이트", 1);
@@ -72,6 +81,7 @@ namespace gtune
             my_treeview_panel sound = new my_treeview_panel("사운드", 1);
             my_treeview_panel game_info = new my_treeview_panel("게임 정보", 1);
 
+           
             tree_sprite = new TreeViewItem();
              tree_background = new TreeViewItem();
              tree_objecta = new TreeViewItem();
@@ -136,12 +146,13 @@ namespace gtune
                 listWindow.DockManager = dockManager;
                 listWindow.Show();
             }
+              
         }
 
         private void OnClosing(object sender, EventArgs e)
         {
-            Properties.Settings.Default.DockingLayoutState = dockManager.GetLayoutAsXml();
-            Properties.Settings.Default.Save();
+            //Properties.Settings.Default.DockingLayoutState = dockManager.GetLayoutAsXml();
+          //  Properties.Settings.Default.Save();
         }
 
 
@@ -176,7 +187,7 @@ namespace gtune
             return false;
         }
 
-        private void NewDocument(string title)
+        private void NewDocument(string title,int type /*type=1,2,3,4,5,6*/)
         {
             //string title = name;
             //string title = "Document";
@@ -186,6 +197,17 @@ namespace gtune
             doc.DockManager = dockManager;
             doc.Title = title+(++tab_index).ToString();
             i = tab_index;
+            doc.gtune_type = type;
+            switch(type){
+                case 1:
+                    doc.gtune_class = new gtune_sprite();
+                    break;
+                case 2:
+                    doc.gtune_class = new gtune_background();
+                    break;
+                
+
+            }
             //doc.Title = title + i.ToString();
             
             doc.Show();
@@ -208,7 +230,7 @@ namespace gtune
                 return propertyWindow;
             else if (type == typeof(ExplorerWindow).ToString())
                 return explorerWindow;
-            else if (type == typeof(ListWindow).ToString())
+            else if (type == typeof (ListWindow).ToString())
                 return listWindow;
 
             return null;
@@ -256,7 +278,7 @@ namespace gtune
         void new_sound(object sender, MouseButtonEventArgs e)        // 스프라이트 만들기 화면 그리기
         {
            // Clear_stackpanel();
-            NewDocument("Sound");
+            NewDocument("Sound",0);
 
             window_panel1 = doclist[i-1].window_panel1;
             window_panel1.Children.Add(new Sound());
@@ -267,16 +289,20 @@ namespace gtune
         {
             //Clear_stackpanel();
 
-            NewDocument("make_Sprite");
+            NewDocument("make_Sprite", 1);
 
 
             window_panel1 = doclist[i - 1].window_panel1;
             window_panel2 = doclist[i - 1].window_panel2;
             window_panel3 = doclist[i - 1].window_panel3;
 
-            window_panel1.Children.Add(new UserControl1());
-            window_panel2.Children.Add(new UserControl2());
-            window_panel3.Children.Add(new UserControl3());
+
+            uc_Makesprite1 = new Make_sprite(this);
+            uc_Makesprite2=new Make_Sprite2();
+            uc_Makesprite3 = new Make_Sprite3();
+            window_panel1.Children.Add(uc_Makesprite1);
+            window_panel2.Children.Add(uc_Makesprite2);
+            window_panel3.Children.Add(uc_Makesprite3);
             Grid.SetColumn(window_panel3, 2);
             Grid.SetColumnSpan(window_panel3, 3);
 
@@ -285,7 +311,7 @@ namespace gtune
         void modify_sprite_window(object sender, MouseButtonEventArgs e)          // 스프라이트 수정하기 화면 그리기
         {
            // Clear_stackpanel();
-            NewDocument("modify_Sprite");
+            NewDocument("modify_Sprite", 0);
             window_panel1 = doclist[i - 1].window_panel1;
             window_panel2 = doclist[i - 1].window_panel2;
 
@@ -296,23 +322,32 @@ namespace gtune
 
         }
 
+
+
         void background_image(object sender, MouseButtonEventArgs e)          // 백그라운드 이미지 화면 그리기
         {
             // Clear_stackpanel();
-            NewDocument("background_image");
+            NewDocument("background_image", 2);
+
+
             tree_background.Items.Add("background_image");
 
+            uc_Background_image1 = new Background_image1(this);
+            uc_Background_image2 = new Background_image2();
 
             window_panel1 = doclist[i - 1].window_panel1;
             window_panel2 = doclist[i - 1].window_panel2;
 
-            window_panel1.Children.Add(new Background_image1());
-            window_panel2.Children.Add(new Background_image2());
+            window_panel1.Children.Add(uc_Background_image1);
+            window_panel2.Children.Add(uc_Background_image2);
 
             Grid.SetColumn(window_panel2, 1);
             Grid.SetColumnSpan(window_panel2, 3);
+
             
         }
+
+
 
 /*        void Clear_stackpanel()                                      // 오른쪽 화면 모두 지우기
         {

@@ -1,0 +1,7 @@
+F:\Sprites_src\SpriteCanvas\bin\Debug\SpriteCanvas.dll
+F:\Sprites_src\SpriteCanvas\bin\Debug\SpriteCanvas.pdb
+F:\Sprites_src\SpriteCanvas\obj\Debug\SpriteCanvas.csprojResolveAssemblyReference.cache
+F:\Sprites_src\SpriteCanvas\obj\Debug\SpriteCanvas.Canvas.resources
+F:\Sprites_src\SpriteCanvas\obj\Debug\SpriteCanvas.csproj.GenerateResource.Cache
+F:\Sprites_src\SpriteCanvas\obj\Debug\SpriteCanvas.dll
+F:\Sprites_src\SpriteCanvas\obj\Debug\SpriteCanvas.pdb

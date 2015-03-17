@@ -24,10 +24,13 @@ namespace gtune.UC.Background
 
     public partial class Background_image1 : UserControl
     {
-        public Background_image1()
+        private MainWindow form;
+
+
+        public Background_image1(MainWindow form)
         {
             InitializeComponent();
-            
+            this.form = form;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -46,8 +49,11 @@ namespace gtune.UC.Background
             img.StreamSource = ms;
             img.EndInit();
 
-
+            form.uc_Background_image2.Background_image.Source = img;
+            img_width.Text = img.Width.ToString();
+            img_height.Text = img.Height.ToString();
             }
+
         }
 
         private string openfile_dialog(string filename) //파일 다이얼로그 열기
